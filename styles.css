@@ -1,0 +1,218 @@
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f8fa;
+    color: #24292e;
+    line-height: 1.6;
+}
+
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 900px; /* Increased max-width for more spacious layout */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #24292e;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add shadow for depth */
+}
+
+header h1 {
+    font-size: 3em; /* Larger font for the name */
+    margin: 0;
+}
+
+header p {
+    font-size: 1.1em; /* Slightly larger font for contact details */
+    margin: 5px 0;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    margin: 0 15px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #0366d6;
+}
+
+/* Main Content Styles */
+main {
+    background-color: #ffffff;
+    padding: 30px; /* Increased padding for a cleaner look */
+    border-radius: 8px; /* More rounded corners */
+    box-shadow: 0 1px 3px rgba(27,31,35,.12), 0 8px 24px rgba(27,31,35,.12);
+    margin-top: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 2em; /* Larger section headers */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 5px;
+    color: #24292e; /* Darker header color */
+}
+
+section p, section ul, section ul li {
+    font-size: 1.1em; /* Larger font for readability */
+    color: #586069; /* Softer text color */
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.job, .education-list, .certifications-list, .skills-list {
+    margin-bottom: 20px;
+}
+
+.job h3, .education-list li, .certifications-list li, .skills-list li {
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.job p, .education-list li, .certifications-list li {
+    font-size: 0.95em;
+    color: #586069;
+    margin-bottom: 5px;
+}
+
+.job ul {
+    list-style: disc;
+}
+
+.contact {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    border-top: 1px solid #e1e4e8;
+    font-size: 0.9em;
+    background-color: #f6f8fa; /* Match with body background */
+    color: #24292e;
+}
+
+footer a {
+    color: #0366d6;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #24292e;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 1.75em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header nav a {
+        margin: 0 10px;
+        font-size: 0.8em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    section p, section ul, section ul li {
+        font-size: 1em;
+    }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #24292e;
+    color: #f6f8fa;
+}
+
+header.dark-mode {
+    background-color: #f6f8fa;
+    color: #24292e;
+}
+
+header.dark-mode nav a {
+    color: #24292e;
+}
+
+header.dark-mode nav a:hover {
+    color: #0366d6;
+}
+
+main.dark-mode {
+    background-color: #2d333b;
+    color: #adbac7;
+}
+
+section.dark-mode h2 {
+    color: #adbac7;
+    border-color: #373e47;
+}
+
+footer.dark-mode {
+    background-color: #24292e;
+    color: #f6f8fa;
+}
+
+footer.dark-mode a {
+    color: #f6f8fa;
+}
+
+footer.dark-mode a:hover {
+    color: #0366d6;
+}
